@@ -1,5 +1,5 @@
 {
-  "name": "飲片驗收儲位查詢",
-  "description": "查詢中藥飲片驗收儲位，資料來源為 Google 試算表",
+  "name": "NEW 飲片",
+  "description": "Search Google Sheets and display corresponding images from Google Drive folders.",
   "requestFramePermissions": []
 }
