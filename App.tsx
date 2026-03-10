@@ -154,19 +154,21 @@ export default function App() {
                     key={index} 
                     className="bg-white rounded-2xl p-4 shadow-sm border border-rose-100 flex flex-col gap-3 transition-transform"
                   >
-                    <div className="flex justify-between items-start gap-2">
-                      <h2 className="text-3xl font-black text-rose-950 leading-tight">
-                        {item.品名 || '未知品名'}
-                      </h2>
-                      <div className="inline-flex items-center gap-1.5 bg-rose-100 text-rose-800 px-4 py-2.5 rounded-xl text-2xl sm:text-3xl font-black border border-rose-200 shrink-0 shadow-sm">
-                        <MapPin className="w-6 h-6 sm:w-7 sm:h-7" />
-                        {item.儲位 || '無'}
+                    <div className="flex flex-col gap-3">
+                      <div className="flex justify-between items-start gap-2">
+                        <h2 className="text-3xl font-black text-rose-950 leading-tight">
+                          {item.品名 || '未知品名'}
+                        </h2>
+                        <div className="inline-flex items-center gap-1.5 bg-rose-100 text-rose-800 px-4 py-2.5 rounded-xl text-2xl sm:text-3xl font-black border border-rose-200 shrink-0 shadow-sm">
+                          <MapPin className="w-6 h-6 sm:w-7 sm:h-7" />
+                          {item.儲位 || '無'}
+                        </div>
                       </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-2 text-lg sm:text-xl text-rose-700 bg-rose-50 w-fit px-3 py-2 rounded-lg border border-rose-100">
-                      <Hash className="w-5 h-5 sm:w-6 sm:h-6" />
-                      <span className="font-mono font-bold tracking-wider">{item.料號 || '無'}</span>
+                      
+                      <div className="flex items-center gap-2 text-lg sm:text-xl text-rose-700 bg-rose-50 w-fit px-3 py-2 rounded-lg border border-rose-100">
+                        <Hash className="w-5 h-5 sm:w-6 sm:h-6" />
+                        <span className="font-mono font-bold tracking-wider">{item.料號 || '無'}</span>
+                      </div>
                     </div>
 
                     {/* Google Drive Links */}
